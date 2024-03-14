@@ -1,0 +1,126 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+  background: url(video/bg-video.mp4);
+}
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(29, 5, 48,0.7);
+    backdrop-filter: blur(10px);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0,0.5);
+    position:sticky;
+    top:0;
+  }
+  
+.menu li {
+    float: left;
+  }
+  
+.menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size:20px;
+    margin-top:18px;
+  }
+  
+.menu li a:hover:not(.active) {
+    transition: .6s linear;
+    border-bottom:1px solid #eaa5a5;
+}
+  
+.menu .btn-login {
+    background-color: rgba(48, 4, 170,0.6);
+    padding:10px 20px;
+    margin:0px;
+    font-size:18px;
+    outline: none;
+    color:white;
+    border-radius: 20px;
+  }
+
+  #banner{
+    width: 100%;
+    margin:20px;
+    padding:20px;
+    text-align: center;
+    color:white;
+    background-color: rgba(194, 39, 205, 0.3);
+    border-radius: 20px;
+  }
+  #banner h1{
+    letter-spacing: 20px;
+    padding:10px;
+    text-shadow: 1px 1px 2px  black,1px 1px 3px black,1px 1px 3px black,1px 1px 4px black;
+  }
+  #banner h2{
+    letter-spacing: 10px;
+    margin:20px;
+    color:blueviolet;
+    text-shadow: 1px 1px 2px  black,1px 1px 3px black,1px 1px 3px black,1px 1px 4px black;
+
+  }
+  #banner p{
+    margin:20px;
+  }
+  .line{
+    border-top: 2px solid rgba(0, 0, 0,0.5);
+    margin:30px;
+  }
+  /** ZOOM img **/
+  .zoom-img {
+    
+    padding: 10px;
+    background-color: rgba(5, 83, 5,0.6);
+    transition: transform .2s;
+    width: 400px;
+    height: 200px;
+    margin: 0 auto;
+  }
+  
+  .zoom-img:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
+  }
+
+  /** Footer **/
+  footer{
+    color:white;
+    text-align: center;
+  }
+  footer a{
+    text-decoration: none;
+  }
+
+
+/*****************
+*** Responsive ***/
+/* On screens that are 992px wide or less, the background color is blue */
+@media screen and (max-width: 992px) {
+    body {
+      background-color: rgba(24, 24, 243,0.4);
+      color: white;
+    }
+   
+  }
+  
+  /* On screens that are 600px wide or less, the background color is olive */
+  @media screen and (max-width: 600px) {
+    body {
+      background-color: rgba(114, 114, 1,0.5);
+      color: white;
+    }
+    .menu li {
+        float:none;
+      }
+   
+  }
